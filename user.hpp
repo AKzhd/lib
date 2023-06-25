@@ -24,6 +24,9 @@ public:
         _pass = pass;
     }
     const std::string &getPass() const { return _pass; }
+    std::fstream& operator >>(std::fstream& is, User& obj)
+    std::ostream& operator <<(std::ostream& os, const User& obj)
+
 
     ~User();
 };
